@@ -6,6 +6,7 @@ let path = require("path");
 const S3 = require('aws-sdk/clients/s3')
 const {v4 } = require('uuid')
 const axios = require('axios')
+require('dotenv').config()
 
 let students = [
     {name: "sathsara",
@@ -17,8 +18,8 @@ let students = [
 
 let s3 = new S3({
     region: 'us-east-1',
-    accessKeyId: 'AKIAQHVZ3DDE6P2NGHEM',
-    secretAccessKey: '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',
+    accessKeyId: process.env.ACCESS_KEY,
+    secretAccessKey: process.env.SECRET_KEY,
     signatureVersion: 'v4',
 })
 
@@ -100,8 +101,8 @@ router.get('/getUrl/:fileKey', function (req,res){
     console.log("Trying to download file", fileKey)
     let AWS = require('aws-sdk')
     AWS.config.update({
-        accessKeyId: 'AKIAQHVZ3DDE6P2NGHEM',
-        secretAccessKey: '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',
+        accessKeyId: process.env.ACCESS_KEY,
+        secretAccessKey: process.env.SECRET_KEY,
         region: 'us-east-1'
     });
 
