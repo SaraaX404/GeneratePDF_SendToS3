@@ -8,4 +8,5 @@ Clone this repository and navigate to the directory:
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/pdf-generation-with-nodejs-and-aws-s3.git
-cd pdf-generation-with-nodejs-and-aws-s3
+cd GeneratePDF_SendToS3
+
