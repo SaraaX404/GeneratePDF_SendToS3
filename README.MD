@@ -7,6 +7,6 @@ This project demonstrates how to generate a PDF file from an HTML template and s
 Clone this repository and navigate to the directory:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pdf-generation-with-nodejs-and-aws-s3.git
+git clone https://github.com/SaraaX404/pdf-generation-with-nodejs-and-aws-s3.git
 cd GeneratePDF_SendToS3
 
